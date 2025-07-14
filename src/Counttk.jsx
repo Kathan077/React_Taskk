@@ -11,6 +11,7 @@ export default class Class extends React.Component {
         <div>
               <h2>{this.state}</h2>
               <button onClick={()=>setCount(count+1)}>Inc</button>
+              
         </div>
       )
     }
