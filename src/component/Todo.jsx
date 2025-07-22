@@ -11,13 +11,13 @@ function Todo() {
 
   function handelsubmit(index) {
     
-      const trimmedData = {
+      const Data = {
       name: data.name.trim(),
       email: data.email.trim()
     };
 
-    if (trimmedData.name === "" || trimmedData.email === "") {
-      alert("Name and Email cannot be empty.");
+    if (Data.name === "" || Data.email === "") {
+      alert("Name and Email empty.");
       return;
      
     }

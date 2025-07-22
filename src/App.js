@@ -7,7 +7,7 @@ import Ffetch2 from './component/Ffetch2';
 import { Timer } from './component/Timer';
 import { Timerpar } from './component/Timerpar';
 import {Por} from './component/Por'
-import { Todo } from './component/Todo';
+import Todo from './component/Todo';
 import { Todoref } from './component/Todoref';
 import { Form_val } from './component/Form_val';
 import Tudu from './component/Tudu';
@@ -53,7 +53,8 @@ let App = () => {
        {/* <Todoref/>
 
    */}
-   <Tudu/>
+   <Todo/>
+   {/* <Tudu/> */}
    {/* <Form_val/> */}
     </div>
   );
