@@ -1,17 +1,16 @@
-import { useState } from 'react';
-import Test from './component/Test';
-import Login from './component/Login';
-import Pass from './component/Pass';
-import Listout from './Listout';
-import Show from './Show';
-import Tudu from './Tudu';
-import Countt from './Countt';
-import { Mul } from './Mul';
-import Counttt from './Counttt';
-import Multiple_input from './Multiple_input';
-import User from './User';
-import Light_Dark from './Light_Dark';
-import Counter_without_class from './Counter_without_class';
+import React from 'react';
+import Count from './component/Count';
+import { Play } from './component/Play';
+import { Par } from './component/Par';
+import Ffetch from './component/Ffetch';
+import Ffetch2 from './component/Ffetch2';
+import { Timer } from './component/Timer';
+import { Timerpar } from './component/Timerpar';
+import {Por} from './component/Por'
+import { Todo } from './component/Todo';
+import { Todoref } from './component/Todoref';
+import { Form_val } from './component/Form_val';
+import Tudu from './component/Tudu';
 
 let App = () => {
   // let [count, setCount] = useState(0);
@@ -42,21 +41,20 @@ let App = () => {
       <button onClick={Decrement}>Decrement</button>
       <button onClick={Reset}>Reset</button> */}
 
-      {/* <Test />
-      <Login />
-      <Show />
-      <Pass /> 
-      <Listout list={list} />
-     <Tudu/>
-    // < Countt/> */
-   }
-    {/* <Tudu/> */}
-    <Counttt/>
-   {/* < Multiple_input/> */}
-< Light_Dark />
-   
-     <Mul/> 
-     <Counter_without_class/>
+      {/* <Count/>
+      <Play/>
+      <Par/> */}
+      {/* <Ffetch/> */}
+      {/* <Ffetch2/> */}
+      {/* <Timer/> */}
+      {/* <Timerpar/> */}
+      {/* <Todo/> */}
+    {/* <Por/> */}
+       {/* <Todoref/>
+
+   */}
+   <Tudu/>
+   {/* <Form_val/> */}
     </div>
   );
 };
