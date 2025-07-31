@@ -1,63 +1,26 @@
 import React from 'react';
-import Count from './component/Count';
-import { Play } from './component/Play';
-import { Par } from './component/Par';
-import Ffetch from './component/Ffetch';
-import Ffetch2 from './component/Ffetch2';
-import { Timer } from './component/Timer';
-import { Timerpar } from './component/Timerpar';
-import {Por} from './component/Por'
-import Todo from './component/Todo';
-import { Todoref } from './component/Todoref';
-import { Form_val } from './component/Form_val';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './component/Navbar';
 import Tudu from './component/Tudu';
+import Show from './component/Show';
+import Test from './component/Test';
+import Project from './component/Project';
+import Projectime from './component/Projectime';
 
-let App = () => {
-  // let [count, setCount] = useState(0);
-  // let [list, setList] = useState([
-  //   { name: "Kathan", age: 18},
-  //   { name: "meet", age: 20},
-  //   { name: "smit", age: 22}
-  // ]);
-
-  // let Increment = () => {
-  //   setCount(count + 1);
-  // };
-
-  // let Decrement = () => {
-  //   if (count > 0) {
-  //     setCount(count - 1);
-  //   }
-  // };
-
-  // let Reset = () => {
-  //   setCount(0);
-  // };
-
+function App() {
   return (
     <div>
-      {/* <h1>{count}</h1>
-      <button onClick={Increment}>Increment</button>
-      <button onClick={Decrement}>Decrement</button>
-      <button onClick={Reset}>Reset</button> */}
-
-      {/* <Count/>
-      <Play/>
-      <Par/> */}
-      {/* <Ffetch/> */}
-      {/* <Ffetch2/> */}
-      {/* <Timer/> */}
-      {/* <Timerpar/> */}
-      {/* <Todo/> */}
-    {/* <Por/> */}
-       {/* <Todoref/>
-
-   */}
-   <Todo/>
-   {/* <Tudu/> */}
-   {/* <Form_val/> */}
+      <Tudu/>
+      {/* <Navbar />
+      <Routes>
+        <Route path="/tudu" element={<Tudu />} />
+        <Route path="/show" element={<Show />} />
+        <Route path="/test" element={<Test />} />
+      </Routes> */}
+      {/* <Project/> */}
+      <Projectime/>
     </div>
   );
-};
+}
 
 export default App;

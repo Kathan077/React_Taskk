@@ -6,12 +6,12 @@ const Tudu = () => {
     const [edit, setEdit] = useState(null)
 
     function addText(e) {
-        setState(e.target.value) // ✅ fixed here
+        setState(e.target.value) 
     }
 
     function handleSubmit(e) {
         e.preventDefault()
-        if (state.trim() === '') return // prevent empty submission
+        if (state.trim() === '') return 
 
         if (edit !== null) {
             const updatedText = [...text]
