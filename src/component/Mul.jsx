@@ -76,3 +76,5 @@ export const Mul = () => {
     </div>
   );
 };
+
+export default Mul

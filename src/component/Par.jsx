@@ -1,49 +1,32 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 
 export const Par = () => {
-  const[state,setState]=useState({
-    name:'',
-    email:''
-  })
-  const[text,setText]=useState([])
-  function addtext(e) {
-    setState({ ...state, [e.target.name]: e.target.value });
-  }
-  
-function handlesub (e) 
-{
-  e.preventDefault()
-  setText([...text,state])
-  
-}
-function handledel(i) {
-  const newarr=[...text]
- newarr.splice(i,1)
- setText(newarr)  
-}
+  const nameref=useref(null)
+  const emailref=useref(null)
+  constdisplsyref=useref(null)
 
+
+
+  function handlesubmit(e) {
+    e.preventDefault()
+    const name=nameref.current.value
+    const email=emailref.current.value
+
+    nameref.current.value='';
+    email.current.value=''
+    
+  }
   return (
     <div>
-      <form onSubmit={handlesub}>
-        <input name='name' type="name" value={state.name} onChange={addtext}/>
-        <input name='email' type="email"value={state.email} onChange={addtext}/>
-        <input type="submit" />
+      <form onSubmit={handlesubmit}>
+      <input type="text"  ref={nameref} />
+      <input type="text"  ref={nameemail} />
+      <button type="submit" > </button>
+      <div ref={displayref}>
+        
+      </div>
       </form>
-      <p>
-        {
-          text.map((el,i)=>{
-          
-          return <>
-          <li key={i}>
-            name:{el.name},email:{el.email}
-          </li>
-          <button onClick={()=>handledel(i)}>del</button>
-          </> 
-          })
-        }
-      </p>
+
     </div>
   )
 }
-//  

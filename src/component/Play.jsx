@@ -36,6 +36,7 @@ export const Play = () => {
         </div>
     );
 };
+export default Play
 
 
 // import React, { useState, useEffect } from 'react';

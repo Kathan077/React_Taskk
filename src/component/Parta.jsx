@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
-export const Parta = () => {
-    const[state,setState]=useState("")
-    const[text,setText]=useState([])
+export default function Parta() {
   return (
     <div>
-        <input type="text" />
-
+      <div>
+        <Link to="Show" >Show</Link>
+        <Link to="Login" >Login</Link>
+      </div>
+      <div>
+        <Outlet/>
+      </div>
     </div>
   )
 }

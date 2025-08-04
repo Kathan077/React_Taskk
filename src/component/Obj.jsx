@@ -15,3 +15,4 @@ export const Obj = (Props) => {
     </div>
   )
 }
+export default Obj

@@ -59,7 +59,7 @@ const Ffetch2 = () => {
         setState({
             name: data.results[0].name.first,
             age: data.results[0].dob.age,
-            image: data.results[0].picture.medium
+            img: data.results[0].picture.medium
 
         })
 
@@ -72,7 +72,7 @@ const Ffetch2 = () => {
     <div>
         <h1>{state.name}</h1>
         <p>{state.age}</p>
-        <img src={state.image} />
+        <img src={state.img} />
         <button onClick={feachdata}>change</button>
     </div>
   )
